@@ -33,6 +33,7 @@
   text-align: center;
 }
 #q4Wrapper article img {
+  max-width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 #q4Wrapper a {
@@ -58,7 +59,14 @@
   text-align: center;
 }
 
-/* Begin styling the report items here! */
 .reports {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
 
+@media (max-width: 768px) {
+  .reports {
+    grid-template-columns: 1fr 1fr;
+  }
 }
