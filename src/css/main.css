@@ -65,8 +65,21 @@
   gap: 30px;
 }
 
+.reports .reports_title span {
+  color: #919394;
+}
+
 @media (max-width: 768px) {
-  .reports {
+  #q4Wrapper .reports {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #q4Wrapper .reports a figure {
+    width: 100%;
+    margin: 0;
+  }
+
+  #q4Wrapper .reports h3.reports_title:first-child {
+    margin-bottom: 1rem;
   }
 }
