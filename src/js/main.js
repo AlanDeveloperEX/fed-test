@@ -5,7 +5,9 @@ var reportsWidget = {
             '{{#.}}' +
                 '<article class="reports_item">' +
                     '<a href="{{cover}}" target="_blank">' +
-                        '<img class="reports_cover" src="{{cover}}" alt="{{title}} Cover"/>' +
+                        '<figure>' +
+                            '<img class="reports_cover" src="{{cover}}" alt="{{title}} Cover"/>' +
+                        '</figure>' +
                     '</a>' +
                     '<footer class="reports_docs">' +
                         '{{#documents}}' +
